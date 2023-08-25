@@ -1,0 +1,11 @@
+@charset "utf-8";
+
+/* ------------기본 레이아웃------------ */
+#wrapper{width:100%;overflow:hidden;position: relative;}
+.inner{position:relative;width:1400px;padding-right:1.25rem;padding-left:1.25rem; margin:0 auto; box-sizing:border-box;}
+/* ------------------------------------- */
+
+/* header */
+#header {position: absolute;top: 0;left: 0;}
+
+/* footer */

@@ -1,0 +1,48 @@
+@charset "utf-8";
+
+/* GmarketSans */
+@font-face{
+	font-family: "GmarketSans";
+	font-style: normal;
+	font-weight: 300;
+	src: url(font/GmarketSansLight.ttf) format("ttf"),
+         url(font/GmarketSansLight.woff) format('woff'),
+         url(font/GmarketSansLight.woff2) format('woff2');
+}
+
+@font-face{
+	font-family: "GmarketSans";
+	font-style: normal;
+	font-weight: 500;
+	src: url(font/GmarketSansMedium.ttf) format("ttf"),
+         url(font/GmarketSansMedium.woff) format('woff'),
+         url(font/GmarketSansMedium.woff2) format('woff2');
+}
+
+@font-face{
+	font-family: "GmarketSans";
+	font-style: normal;
+	font-weight: 700;
+	src: url(font/GmarketSansBold.ttf) format("ttf"),
+         url(font/GmarketSansBold.woff) format('woff'),
+         url(font/GmarketSansBold.woff2) format('woff2');
+}
+
+
+/* PyeongChangPeace */
+@font-face {
+    font-family: 'PyeongChangPeace';
+    font-weight: 300;
+    font-style: normal;
+    src: url(font/PyeongChangPeace-Light.ttf) format('ttf'),
+         url(font/PyeongChangPeace-Light.woff) format('woff'),
+         url(font/PyeongChangPeace-Light.woff2) format('woff2');
+}
+@font-face {
+    font-family: 'PyeongChangPeace';
+    font-weight: 700;
+    font-style: normal;
+    src: url(font/PyeongChangPeace-Bold.ttf) format('ttf'),
+         url(font/PyeongChangPeace-Bold.woff) format('woff'),
+         url(font/PyeongChangPeace-Bold.woff2) format('woff2');
+}
