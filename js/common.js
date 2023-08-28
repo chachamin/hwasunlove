@@ -73,52 +73,18 @@ $(document).ready(function(){
 		$(this).siblings('.slick-stop').css('display','none');
 	});
 
-	// $('.tour_sd').slick({
-	// 	centerMode: true,
-	// 	centerPadding: '60px',
-	// 	slidesToShow: 3,
-	// 	infinite: true,
-	// 	autoplay: false,
-	// 	dots: false,
-	// 	pauseOnDotsHover: false,
-	// 	pauseOnHover: false,
-	// 	arrows: false
-	//   });
-
 	$('.tour_sd').slick({
 		centerMode: true,
-		centerPadding: '0',
+		centerPadding: '0px',
 		slidesToShow: 3,
-		responsive: [
-		  {
-			breakpoint: 768,
-			settings: {
-			  arrows: false,
-			  centerMode: true,
-			  centerPadding: '40px',
-			  slidesToShow: 3
-			}
-		  },
-		  {
-			breakpoint: 480,
-			settings: {
-			  arrows: false,
-			  centerMode: true,
-			  centerPadding: '40px',
-			  slidesToShow: 1
-			}
-		  }
-		]
+		infinite: true,
+		autoplay: false,
+		dots: false,
+		pauseOnDotsHover: false,
+		pauseOnHover: false,
+		arrows: false,
+		//variableWidth: true
 	  });
-
-
-// -------------------------- 스킵네비 포커스잡아주기--------------------------
-    $("#skipNavi > a").click(function(){
-    $($(this).attr("href"))
-      .attr("tabindex","0")
-      .css("outline","0")
-      .focus();
-    });
 
 	// Select all links with hashes
 	$('a.smooth[href*="#"]')
@@ -157,21 +123,11 @@ $(document).ready(function(){
 		}
 	  });
 
+	  var $main = $('#main');
+
 
 
 });
-
-
-
-// -------------------------- 상단으로 나타나기 --------------------------
-$( window ).scroll( function() {
-	if ( $( this ).scrollTop() > 360 ) {
-		$( '.loca_nav' ).fadeIn(500);
-	} else {
-		$( '.loca_nav' ).fadeOut(500);
-	}
-
-} );
 
 
 // fixed header(pc)
@@ -185,34 +141,6 @@ $(window).scroll(function() {
 			$("#header").removeClass("fixed");	
 		}
 	}
-});
-
-
-$(function () {
-	$(window).on({
-		load: function () {
-			if ($(window).width() > 1280) {
-				web_menu();
-			}
-		}
-	});
-});
-
-
-
-// fixed header(pc)
-$(window).scroll(function() {
-
-		var scroll = $(window).scrollTop();
-		if (scroll >= 70) {
-			$("#header").addClass("fixed");
-			
-
-		} else {
-			$("#header").removeClass("fixed");	
-			
-		}
-
 });
 
 
