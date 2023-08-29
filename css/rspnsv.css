@@ -86,25 +86,96 @@
     .online_wrap .tab_cont .on_line {width: 200%;}
     .offline_wrap .tab_cont {overflow-x: scroll;}
     .offline_wrap .tab_cont .off_line {width: 150%;}
+
+    /* 추천여행 */
+    .tour_sd .slick-slide .tour_cont::after{width: 180px;height: 115px;}
+    .tour_sd .slick-slide .tour_cont.cont01::after { background-image: url(../img/tour_deco_0101_s.png);}
+    .tour_sd .slick-slide .tour_cont.cont02::after { background-image: url(../img/tour_deco_0102_s.png);}
+    .tour_sd .slick-slide .tour_cont.cont03::after { background-image: url(../img/tour_deco_0103_s.png);}
+    .tour_sd .slick-slide .tour_cont.cont04::after { background-image: url(../img/tour_deco_0104_s.png);}
+    .tour_sd .slick-slide .tour_cont.cont05::after { background-image: url(../img/tour_deco_0105_s.png);}
+    .tour_sd .slick-slide .tour_cont.cont06::after { background-image: url(../img/tour_deco_0106_s.png);}
+    .tour_sd .slick-slide .tour_cont.cont07::after { background-image: url(../img/tour_deco_0107_s.png);}
+    .tour_sd .slick-slide .tour_cont.cont08::after { background-image: url(../img/tour_deco_0108_s.png);}
 }
 
 
 @media (max-width: 680px){
 
     /* 기부방법 */
+    .donation_qna > div {margin-bottom: 20px;}
     .donation_qna .q_box .text_box {width: 45%;}
+    .donation_qna .img_box img {transform: scale(.9);}
 
     /* 기부금사용 */
     .use_cont ul {width: 180%;}
+
+    /* 답례품 */
+    .main_sec04 .cloud02 {transform: scale(0.7);right: -40px;}
+    .present_sd .item {height: 350px;}
+
+    /* 추천여행 */
+    .tour_sd .slick-slide .tour_cont::before {width: 88px;height: 176px; background-image: url(../img/tour_deco_01_s.png);left: 32px;}
 }
 
 @media (max-width: 560px){
 
+    .heading_5 {font-size: 1.667rem;}
+
+    section .tit_wrap {margin-bottom: 40px;}
+
+    /* 기부금사용 */
+    .use_cont ul {width: 220%;}
+
+    /* 답례품소개 */
+    .present_sd .item {height: 530px;}
+    .present_sd .item .t_box .tit {font-size: 20px;}
+    .present_sd .item .t_box .desc.mt20 {font-size: 14px;margin-top: 10px !important;}
+    .present_sd .slick-slide:nth-child(2n) {margin-top: 0;}
+
+    /* 기부절차 */
+    .online_wrap .tab_cont .on_line {width: 250%;}
+    .offline_wrap .tab_cont .off_line {width: 200%;}
+
+    /* 추천여행 */
+    .tour_wrap::before {transform: scale(.7);top: 20%;left: 0;}
+    .tour_wrap::after {transform: scale(.7);top: 20%;right: 0;}
+    .tour_sd .slick-slide .tour_cont::before {left: 34px;bottom: 0;}
+    .tour_sd .slick-slide .tour_cont::after {right: -63px;}
+    .tour_wrap .tit_wrap {margin-bottom: 0;}
+
+    .sticky_link_wrap .link_box {width: 100%;height: 50px;}
+    .sticky_link_wrap .link_box .bg_g:first-child::after {border-bottom: 50px solid #02a652;border-right: 50px solid transparent;right: -50px;}
+    .sticky_link_wrap .link_box a {font-size: 25px;}
+    .sticky_link_wrap .link_box .bg_g {width: calc(50% - 25px);}
+
+    .floating_event_wrap {bottom: 6.625rem;}
 }
 
 
 @media (max-width: 480px){
 
+    section .tit_wrap .tit_b {font-size: 3.333rem;}
+
+    /* 기부방법 */
+    .donation_qna .q_box .text_box {width: 55%;}
+    .donation_qna .text_box {font-size: 17px}
+
+    /* 기부금 사용 */
+    .main_sec03 .heading_5 {background: none;}
+    .use_cont ul {width: 250%;}
+
+    /* 답례품소개 */
+    .present_sd .item {height: 460px;}
+
+    /* 기부절차 */
+    .step_tabs > li > a.tablink {min-width: 180px;}
+    .online_wrap .tab_cont .on_line {width: 300%;}
+
+    /* 추천여행 */
+    .tour_sd .slick-slide.slick-center .thumb {width: 350px;}
+
+    .footer_wrap .copy {font-size: 15px;}
 }
 
 @media (max-width: 475px){
@@ -113,9 +184,31 @@
 
 @media (max-width: 425px){
 
+    /* 기부금사용 */
+    .use_cont ul {width: 300%;}
+
+    /* 답례품소개 */
+    .present_sd .item { height: 400px;}
+    
+    /* 기부절차 */
+    .step_tabs > li > a.tablink {min-width: 300px;margin-bottom: 10px;}
+    .online_wrap .tab_cont .on_line {width: 400%;}
+    .offline_wrap .tab_cont .off_line {width: 300%;}
+
+    /* 추천여행 */
+    .tour_sd .slick-slide .tour_cont::after {right: 9px;}
+
+    .sticky_link_wrap .link_box {height: auto;flex-wrap: wrap;text-align: center;}
+    .sticky_link_wrap .link_box .bg_g {width: 100%;height: 45px;}
+    .sticky_link_wrap .link_box .bg_g:first-child::after{display: none;}
+    .sticky_link_wrap .link_box .bg_w {width: 100%;height: 45px;}
+
+    .floating_event_wrap {bottom: 8.625rem;}
 }
 
 @media (max-width: 375px){
 
+    .main_v_tit .tit_wrap {padding: 240px 16px 0;}
+    .event_cont {padding: 10px;}
 }
 	

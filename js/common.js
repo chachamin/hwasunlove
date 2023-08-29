@@ -43,6 +43,18 @@ $(document).ready(function(){
 			  settings: {
 				slidesToShow: 3
 			  }
+			},
+			{
+			  breakpoint: 700,
+			  settings: {
+				slidesToShow: 2
+			  }
+			},
+			{
+			  breakpoint: 600,
+			  settings: {
+				slidesToShow: 1
+			  }
 			}
 		  ]
 	});
@@ -179,4 +191,4 @@ function show(){
 
 $( window ).scroll( show );
 
-document.addEventListener("touchstart", function() {}, true);
+// document.addEventListener("touchstart", function() {}, true);
