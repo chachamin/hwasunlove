@@ -48,6 +48,7 @@ section .tit_wrap .tit_b span {font-weight: 700;}
 .main_sec03::before {content: '';display: block;width: 100%;height: 140px; background: url(../img/bg_03.png) repeat-x;position: absolute;top: -140px;left: 0;}
 .main_sec03 .heading_5 {background: url(../img/under_line.png) no-repeat center bottom;}
 .use_cont ul li {width: calc((100% / 4) - (32px * 9 / 12));margin: 0 16px;text-align: center;font-size: 1.438rem;}
+.use_cont ul li .img_box {min-height: 320px;}
 .use_cont ul li .text_box {margin-top: 15px;}
 
 /* main_sec04 - 답례품소개, 기부절차*/
@@ -55,7 +56,7 @@ section .tit_wrap .tit_b span {font-weight: 700;}
 .main_sec04::before {content: '';display: block;width: 100%;height: 140px; background: url(../img/bg_05.png) repeat-x;position: absolute;top: -140px;left: 0;}
 .main_sec04 .cloud01 {width: 241px;height:230px;background: url(../img/cloud_01.png) no-repeat center;position: absolute;top: 0;left: 0;animation: myMove1 1s linear 3s infinite;}
 .main_sec04 .cloud02 {width: 250px;height:172px;background: url(../img/cloud_02.png) no-repeat center;position: absolute;top: 53%;right: 0;animation: myMove1 1s linear 3s infinite;}
-.present_wrap {background: url(../img/present_sd_bg.png) no-repeat right 40% top 30%;}
+.present_wrap {background: url(../img/present_sd_bg.png) no-repeat right 20% top 70px;}
 .present{position: relative;}
 .present .slick-controls {width:100%;height: 100%; position: absolute;top: 0;left: 0;}
 .present .slick-controls .slick-prev {position: absolute;top: 150px;left: -60px;}
@@ -78,7 +79,15 @@ section.main_sec04 .donation_step_wrap .tit_wrap {margin-bottom: 30px;}
 .step_tabs > li > a.tablink.active, .step_tabs > li > a.tablink:hover {color: #fff;background: #5c9700;box-shadow: 4px 6px 8px 0px rgb(92, 151, 0 ,.3);}
 .step_tabs .tab_cont {display: none;width: 100%;position: absolute;left: 0px;top: 120px;text-align: left;}
 .step_tabs > li:first-child > .tab_cont {display: block;height: 150px;}
-.step_tabs .tab_cont ul li {text-align: center;border: 2px solid #60a486;border-radius: 15px;position: relative;padding: 130px 0 40px;background: #fff}
+.step_tabs .tab_cont ul li {text-align: center;border: 2px solid #60a486;border-radius: 15px;position: relative;padding: 130px 0 40px;background: #fff;animation: scale-in-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;}
+.step_tabs .tab_cont ul li:nth-child(1){animation-delay: .1s;}
+.step_tabs .tab_cont ul li:nth-child(2){animation-delay: .2s}
+.step_tabs .tab_cont ul li:nth-child(3){animation-delay: .3s}
+.step_tabs .tab_cont ul li:nth-child(4){animation-delay: .4s}
+.step_tabs .tab_cont ul li:nth-child(5){animation-delay: .5s}
+.step_tabs .tab_cont ul li:nth-child(6){animation-delay: .6s}
+.step_tabs .tab_cont ul li:nth-child(7){animation-delay: .7s}
+.step_tabs .tab_cont ul li:nth-child(8){animation-delay: .8s}
 .step_tabs .tab_cont ul li::after {content: '';display: block; width: 0px;height: 0px;border-left: 13px solid #60a486;border-top: 10px solid transparent;border-bottom: 10px solid transparent;position: absolute;top: 50%;right: -13px;transform: translateY(-50%);}
 .step_tabs .tab_cont ul li::before {content: '';display: block;width: 110px;height: 60px;position: absolute;top: 40px;left: 50%;transform: translateX(-50%);}
 .step_tabs .tab_cont ul.on_line li:nth-child(1)::before {background: url(../img/online_ico01.png) no-repeat center;}
@@ -187,11 +196,16 @@ section.main_sec04 .donation_step_wrap .tit_wrap {margin-bottom: 30px;}
 .tour_sd .slick-slide .tour_cont.cont07::after { background-image: url(../img/tour_deco_0107.png);}
 .tour_sd .slick-slide .tour_cont.cont08::after { background-image: url(../img/tour_deco_0108.png);}
 .tour_sd .slick-slide.slick-center .tour_cont::after {opacity: 1;transform: translate(0, 0);}
-.tour_sd .slick-slide .thumb {width: 400px;height: 400px;border-radius: 50%;overflow: hidden;transition: all .5s;}
+.tour_sd .slick-slide .thumb {width: 400px;height: 400px;border-radius: 50%;overflow: hidden;transition: all .5s;position: relative;}
+.tour_sd .slick-slide .thumb .name {position: absolute;top: 50%;left: 50%;color: #fff;transform: translate(-50%, -50%);font-size: 1.438rem;transition: .3s;}
+.tour_sd .slick-slide .thumb .text {opacity: 0;}
 .tour_sd .slick-slide .tour_cont .thumb img {width: 100%;height: 100%;object-fit: cover;filter: brightness(0.5);transition: all .5s;}
 .tour_sd .slick-slide .t_box {opacity: 0;display: none;}
 .tour_sd .slick-slide.slick-center {position: relative;}
 .tour_sd .slick-slide.slick-center .thumb {width: 600px;height: 500px;border-radius: 300px 300px 0 0;overflow: hidden;}
+.tour_sd .slick-slide.slick-center .thumb .name {opacity: 0;}
+.tour_sd .slick-slide.slick-center .thumb .text {width: 100%;height: 100%;position: absolute;top: 0;left: 0;display: flex;justify-content: center;align-items: center;font-size: 1.688rem;color: #fff;background-color: rgba(0, 0, 0, .3);text-shadow: 0 0 8px #000;transition: all .3s;text-align: center;}
+.tour_sd .slick-slide.slick-center .thumb:hover .text {opacity: 1;}
 .tour_sd .slick-slide.slick-center .tour_cont .thumb img {filter: brightness(1);}
 .tour_sd .slick-slide.slick-center .t_box {position: absolute;width: 100%;bottom: 0px; left:0; display: block;font-size: 1.438rem;text-align: center;opacity: 1;}
 .tour_sd .item .t_box .tit {font-size: 1.438rem;text-align: center;padding-top: 20px;}
@@ -223,5 +237,18 @@ section.main_sec04 .donation_step_wrap .tit_wrap {margin-bottom: 30px;}
 
     60% {
         transform: translateY(-8px)
+    }
+}
+
+@keyframes scale-in-center {
+    0% {
+      -webkit-transform: scale(0);
+              transform: scale(0);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      opacity: 1;
     }
 }

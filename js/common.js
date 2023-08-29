@@ -83,7 +83,6 @@ $(document).ready(function(){
 		pauseOnDotsHover: false,
 		pauseOnHover: false,
 		arrows: false,
-		//variableWidth: true
 	  });
 
 	// Select all links with hashes
@@ -182,3 +181,5 @@ function show(){
 } // end of show()
 
 $( window ).scroll( show );
+
+document.addEventListener("touchstart", function() {}, true);
