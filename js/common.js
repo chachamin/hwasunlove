@@ -123,6 +123,15 @@ $(document).ready(function(){
 		}
 	  });
 
+
+	// 기부절차
+	$('.step_tabs > li > a.tablink').on('focus click' ,function(){
+		$(this).addClass('active');		
+		$(this).parent('li').siblings('li').find('a.tablink').removeClass('active');		
+		$(this).parent('li').find('.tab_cont').css('display','block');
+		$(this).parent('li').siblings('li').find('.tab_cont').css('display','none');
+	});
+
 	  var $main = $('#main');
 
 
