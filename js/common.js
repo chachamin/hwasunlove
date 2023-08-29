@@ -33,19 +33,40 @@ $(document).ready(function(){
 		responsive: [
 
 			{
-			  breakpoint: 961,
+			  breakpoint: 1300,
 			  settings: {
-				slidesToShow: 1
+				slidesToShow: 4
 			  }
 			},
 			{
-			  breakpoint: 620,
+			  breakpoint: 1280,
+			  settings: {
+				slidesToShow: 3
+			  }
+			}
+		  ]
+	});
+
+	$('.tour_sd').slick({
+		centerMode: true,
+		centerPadding: '0px',
+		slidesToShow: 3,
+		infinite: true,
+		autoplay: false,
+		dots: false,
+		pauseOnDotsHover: false,
+		pauseOnHover: false,
+		arrows: false,
+		responsive: [
+
+			{
+			  breakpoint: 850,
 			  settings: {
 				slidesToShow: 1
 			  }
 			}
 		  ]
-	});
+	  });
 
 	//공동 재생 멈춤
 	slick_stop = $('.slick-stop').on('click', function() {
@@ -73,17 +94,7 @@ $(document).ready(function(){
 		$(this).siblings('.slick-stop').css('display','none');
 	});
 
-	$('.tour_sd').slick({
-		centerMode: true,
-		centerPadding: '0px',
-		slidesToShow: 3,
-		infinite: true,
-		autoplay: false,
-		dots: false,
-		pauseOnDotsHover: false,
-		pauseOnHover: false,
-		arrows: false,
-	  });
+
 
 	// Select all links with hashes
 	$('a.smooth[href*="#"]')
@@ -135,20 +146,6 @@ $(document).ready(function(){
 
 
 
-});
-
-
-// fixed header(pc)
-$(window).scroll(function() {
-	if($(window).width() > 1200) {
-		var scroll = $(window).scrollTop();
-		if (scroll >= 70) {
-			$("#header").addClass("fixed");
-
-		} else {
-			$("#header").removeClass("fixed");	
-		}
-	}
 });
 
 

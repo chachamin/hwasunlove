@@ -304,6 +304,8 @@ a{transition:all .3s ease; -webkit-transition:all .2s ease; -ms-transition:all .
 .action.ani_box > *:nth-child(7){transition-delay:.65s}
 .action.ani_box > *:nth-child(8){transition-delay:.7s}
 
+/*스크롤 */
+/* html {scroll-behavior: smooth;} */
 
 @media print {
 	body{-webkit-print-color-adjust: exact;font-size:9pt !important}

@@ -1,0 +1,121 @@
+@charset "UTF-8";
+@media (max-width: 1440px){
+
+	/* 기본 */
+	.inner{width:100%;padding-right:2rem;padding-left:2rem;margin:0 auto; box-sizing:border-box}
+
+    /* 답례품소개 */
+    .present .slick-controls .slick-prev {left: -20px;z-index: 10;box-shadow: 0 6px 21px rgba(0, 0, 0, 0.2);}
+    .present .slick-controls .slick-next {right: -20px;box-shadow: 0 6px 21px rgba(0, 0, 0, 0.2);}
+
+    /* 추천여행 */
+	.hwTour .slick-controls .slick-prev {left: 27%;}
+    .hwTour .slick-controls .slick-next {right: 27%;}
+}
+
+@media (max-width: 1280px){
+	body,html{font-size:15px;
+	  -webkit-text-size-adjust : none;  /* 크롬, 사파리, 오페라 신버전 */
+	  -ms-text-size-adjust : none;  /* IE */
+	  -moz-text-size-adjust : none;  /* 파이어폭스 */
+	  -o-text-size-adjust : none;  /* 오페라 구버전 */
+	}
+
+    /* 추천여행 */
+    .tour_wrap::after {transform: scale(0.7);top: 27%;right: 26%;}
+    .tour_sd .slick-slide {height: 500px;}
+    .tour_sd .slick-slide .thumb {width: 250px;height: 250px;}
+    .tour_sd .slick-slide.slick-center .thumb {width: 500px;height: 400px;}
+    .hwTour .slick-controls .slick-prev {left: 25%;}
+    .hwTour .slick-controls .slick-next {right: 25%;}
+}
+
+@media (max-width: 1024px){
+
+    /* 기부방법 */
+    .donation_qna .a_box .text_box {padding: 20px;}
+
+    /* 기부금사용처 */
+    .main_sec03 .heading_5 {background-size: 50%;}
+    .use_cont ul li .img_box {min-height: 225px;}
+
+    /* 답례품소개 */
+    .present_sd .item .t_box .desc.mt20 {margin-top: 0.25rem !important;}
+
+    /* 기부절차 */
+    .step_tabs > li:first-child > .tab_cont {height: 280px;}
+    .online_wrap .tab_cont {overflow-x: scroll;}
+    .online_wrap .tab_cont .on_line {width: 150%;}
+}
+
+@media (max-width: 960px){
+    /* 기부방법 */
+    .donation_info .tit_wrap .img_tit img {transform: scale(0.9);}
+
+    /* 답례품소개 */
+    .main_sec04 .cloud01 {transform: scale(0.8);left: -23px;}
+    .main_sec04 .cloud02 {transform: scale(0.8);right: -23px;}
+}
+
+@media (max-width: 820px){
+    /* 기부금사용처 */
+    .main_sec03 .heading_5 {background-size: 70%;}
+    .use_cont {overflow-x: scroll;}
+    .use_cont ul {width: 150%;}
+    .use_cont ul li .img_box {min-height: 270px;}
+
+    /* 답례품소개 */
+    .present_wrap {background: url(../img/present_sd_bg.png) no-repeat right 20% top 90px;background-size: 50%;}
+    .present_sd .item {height: 300px;}
+
+    /* 추천여행 */
+    .tour_wrap::before {top: 30%;left:15%;}
+    .tour_wrap::after {transform: scale(1);top: 20%;right: 10%;}
+    .hwTour .slick-controls .slick-prev {left: 3%;}
+    .hwTour .slick-controls .slick-next {right: 3%;}
+    .tour_sd .slick-slide .tour_cont::before {left: 100px;}
+    .tour_sd .slick-slide .tour_cont::after {right: 40px;}
+}
+
+@media (max-width: 760px){
+
+    /* 기부방법 */
+    .donation_qna .text_box {font-size: 1.267rem;}
+
+    /* 기부절차 */
+    .online_wrap .tab_cont .on_line {width: 200%;}
+    .offline_wrap .tab_cont {overflow-x: scroll;}
+    .offline_wrap .tab_cont .off_line {width: 150%;}
+}
+
+
+@media (max-width: 680px){
+
+    /* 기부방법 */
+    .donation_qna .q_box .text_box {width: 45%;}
+
+    /* 기부금사용 */
+    .use_cont ul {width: 180%;}
+}
+
+@media (max-width: 560px){
+
+}
+
+
+@media (max-width: 480px){
+
+}
+
+@media (max-width: 475px){
+
+}
+
+@media (max-width: 425px){
+
+}
+
+@media (max-width: 375px){
+
+}
+	
